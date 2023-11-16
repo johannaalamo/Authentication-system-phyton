@@ -5,7 +5,7 @@ import { BackendURL } from "./component/backendURL";
 
 import Signup from "./pages/Signup.jsx";
 import Login from "./pages/LoginForm.jsx";
-import { Single } from "./pages/single";
+import Logout from "./pages/Logout.jsx";
 import injectContext from "./store/appContext";
 
 
@@ -25,7 +25,7 @@ const Layout = () => {
                     <Routes>
                         <Route element={<Login />} path="/" />
                         <Route element={<Signup />} path="/signup" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Logout />} path="/logout" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                 </ScrollToTop>
