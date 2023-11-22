@@ -5,9 +5,8 @@ import { BackendURL } from "./component/backendURL";
 
 import Signup from "./pages/Signup.jsx";
 import Login from "./pages/LoginForm.jsx";
-import Logout from "./pages/Logout.jsx";
+import Private from "./pages/Private.jsx";
 import injectContext from "./store/appContext";
-
 
 
 //create your first component
@@ -23,9 +22,9 @@ const Layout = () => {
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
                     <Routes>
-                        <Route element={<Login />} path="/" />
+                        <Route element={<Login />} path="/login" />
                         <Route element={<Signup />} path="/signup" />
-                        <Route element={<Logout />} path="/logout" />
+                        <Route element={<Private />} path="/private" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                 </ScrollToTop>
